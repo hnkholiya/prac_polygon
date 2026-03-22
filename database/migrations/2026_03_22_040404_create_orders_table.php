@@ -6,20 +6,18 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->string('tx_hash')->unique();
+            $table->string('wallet_address');
+            $table->decimal('amount', 10, 4); // To store 0.0010
+            $table->string('status')->default('pending'); // pending or paid
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
         Schema::dropIfExists('orders');

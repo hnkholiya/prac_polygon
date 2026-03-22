@@ -6,10 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
-    protected $fillable = [
-        'user_name',
-        'tx_hash',
-        'status',
+   protected $fillable = [
+        'tx_hash', 
+        'wallet_address', 
+        'amount', 
+        'status'
     ];
 }
 
