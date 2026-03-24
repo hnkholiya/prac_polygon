@@ -7,9 +7,16 @@
     <title>Web3 Payment System</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.11.1/ethers.umd.min.js"></script>
+
+    <!-- coin tiker -->
+     <script src="https://widgets.coingecko.com/gecko-coin-price-marquee-widget.js"></script>
+<gecko-coin-price-marquee-widget locale="en" dark-mode="true" outlined="true" coin-ids="" initial-currency="inr"></gecko-coin-price-marquee-widget>
+
+
+
 </head>
 <body class="bg-gray-100 p-8 font-sans">
-
+<br>
     <div class="max-w-4xl mx-auto">
         <div class="bg-white p-6 rounded-lg shadow-md mb-8 text-center">
             <h2 class="text-2xl font-bold mb-2">Nexify Pay</h2>
@@ -22,6 +29,13 @@
             <p id="statusMessage" class="mt-4 text-sm font-semibold text-gray-700"></p>
         </div>
 
+
+
+<script src="https://widgets.coingecko.com/gecko-coin-price-chart-widget.js"></script>
+<gecko-coin-price-chart-widget locale="en" outlined="true" coin-id="polygon-ecosystem-token" initial-currency="inr"></gecko-coin-price-chart-widget>
+
+
+        <br>
         <div class="bg-white p-6 rounded-lg shadow-md">
             <h3 class="text-xl font-bold mb-4">Payment History</h3>
             <div class="overflow-x-auto">
@@ -179,5 +193,10 @@
             }
         }
     </script>
+
+<br>
+<center>
+<footer>&copy; 2026 Nexify. All rights reserved. Made with ❤️</footer>
+</center>
 </body>
 </html>
