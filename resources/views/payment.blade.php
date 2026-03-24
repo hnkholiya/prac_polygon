@@ -13,7 +13,7 @@
     <div class="max-w-4xl mx-auto">
         <div class="bg-white p-6 rounded-lg shadow-md mb-8 text-center">
             <h2 class="text-2xl font-bold mb-2">Nexify Pay</h2>
-            <p class="text-gray-600 mb-6">Price: 0.001 POL (Polygon Amoy)</p>
+            <p class="text-gray-600 mb-6">0.001 POL (Polygon Amoy)</p>
             
             <button id="payButton" onclick="handlePayment()" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition-all">
                 🦊 Pay with MetaMask
